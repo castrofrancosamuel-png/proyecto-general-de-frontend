@@ -1,1 +1,1 @@
-# ProjectoFinal_Taquilla
+# Proyecto General Frontend
