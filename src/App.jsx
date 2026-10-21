@@ -2,6 +2,11 @@ import { useTextos } from "./hooks/useTextos.js";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import { useEffect, useState } from "react";
+import ContadorClics from "./components/ContadorClics.jsx";
+import Cronometro from "./components/Cronometro.jsx";
+import RecordarNombre from "./components/recordarNombre.jsx";
+import PersonajeApi from "./components/PersonajeApi.jsx";
+import NavegadorPersonajes from "./components/NavegadorPersonajes.jsx";
 
 function leerSeccion() {
   return window.location.hash.slice(1) || "inicio";
@@ -51,8 +56,10 @@ function App() {
   }
 
   return (
+
     <>
-      <Navbar
+    
+      {/* <Navbar
         {...datos}
         idioma={idioma}
         cambiarIdioma={setIdioma}
@@ -79,8 +86,16 @@ function App() {
 
         </p>
 
-      </main>
+      </main> */}
+      
+    <ContadorClics/>
+    <Cronometro />
+    <RecordarNombre />
+    <PersonajeApi />
+    <NavegadorPersonajes />
+
     </>
+
   );
 }
 
